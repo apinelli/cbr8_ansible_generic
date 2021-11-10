@@ -12,6 +12,6 @@
         ios_command:
           commands:
             - show log | i CBR-6-PKTCBL_COPS_CONNECTION
-      - local_action: copy content={{ ios_out['stdout_lines'] }} dest=$HOME/cbr8_ansible_generic/cbr8_ansible_{{ inventory_hostname }}.txt
+      - local_action: copy content={{ ios_out['stdout_lines'] }} dest=$HOME/cbr8_ansible_generic/REPORTS/cbr8_ansible_{{ inventory_hostname }}.txt
 
 
